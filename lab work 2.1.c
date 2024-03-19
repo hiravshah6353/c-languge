@@ -18,11 +18,3 @@ void main()
     return 0;
 }
 
-
- output;
-
-  addition of a+b = 18 
-  substraction of a-b = 6 
-  multipiction of a*b = 72 
-  division of a/b = 2 
-  modulus of a%b = 0 
