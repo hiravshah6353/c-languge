@@ -4,7 +4,7 @@
 #include <stdio.h>
 int main(){
     float celsius, fahrenheit;
-    printf("Enter temperature in Celsius: ");
+M    printf("Enter temperature in Celsius: ");
     scanf("%f", &celsius);
     //celsius to fahrenheit conversion formula
     fahrenheit = (celsius * 9 / 5) + 32;
@@ -61,4 +61,11 @@ int main()
     printf("Third angle of the triangle = %d", c);
 
     return 0;
+
+ output;
+ Enter two angles of triangle: 90
+60
+Third angle of the triangle = 30
+
+=== Code Execution Successful ===
 }
