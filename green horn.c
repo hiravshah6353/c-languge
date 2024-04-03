@@ -32,36 +32,7 @@ int main(){
     printf("Enter the TA percentage: ");
     scanf("%f",&ta_percent);
     
-    hra = (basic * hra_percent) / 10;
-   ta = (basic * ta_percent) /8;
-     da=(basic*da_percent)/5;
-    
-    gross_salary = basic + da + hra+ ta;
-    
-    
-    printf("Gross salary of the employee is: %.2f", gross_salary);
-    return 0;
-}
-
-
-Q.3 Write a C Program to find the third angle of a right triangle if two other angles are given.
-
-#include <stdio.h>
-
-int main()
-{
-    int a, b, c;
-
-    
-    printf("Enter two angles of triangle: ");
-    scanf("%d%d", &a, &b);
-
-    c = 180 - (a + b);
-
-    printf("Third angle of the triangle = %d", c);
-
-    return 0;
-
+    hra = (basic * hra_percent) / 10;g
  output;
  Enter two angles of triangle: 90
 60
