@@ -62,3 +62,33 @@ int main() {
   return 0;
 }
 
+Q.5 Write a Program to print leap years between two given numbers using a while loop.
+
+#include <stdio.h>
+int is_leap_year(int year) {
+    if ((year % 4 == 0 && year % 100 != 0) || (year % 400 == 0))
+        return 1;
+    else
+        return 0;
+}
+
+int main() {
+    int first_year, second_year;
+
+    
+    printf("Enter the first number: ");
+    scanf("%d", &first_year);
+    printf("Enter the second number: ");
+    scanf("%d", &second_year);
+    int year = first_year;
+
+    printf("Leap years between %d and %d are:\n", first_year, second_year);
+    while (year <= second_year) {
+        if (is_leap_year(year)) {
+            printf("%d\n", year);
+        }
+        year++;
+    }
+
+    return 0;
+}
