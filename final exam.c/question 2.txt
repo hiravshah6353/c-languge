@@ -1,0 +1,52 @@
+#include <stdio.h>
+#include <string.h>
+
+void countVowels(char sentence[]) {
+    int count[5] = {0}; 
+    
+    for (int i = 0; i < strlen(sentence); i++) {
+        char ch = sentence[i];
+        
+        if (ch == 'a' || ch == 'A') {
+            count[0]++;
+        } else if (ch == 'e' || ch == 'E') {
+            count[1]++;
+        } else if (ch == 'i' || ch == 'I') {
+            count[2]++;
+        } else if (ch == 'o' || ch == 'O') {
+            count[3]++;
+        } else if (ch == 'u' || ch == 'U') {
+            count[4]++;
+        }
+    }
+    
+    printf("Occurrences of each vowel in the sentence:\n");
+    printf("A/a: %d\n", count[0]);
+    printf("E/e: %d\n", count[1]);
+    printf("I/i: %d\n", count[2]);
+    printf("O/o: %d\n", count[3]);
+    printf("U/u: %d\n", count[4]);
+}
+
+int main() {
+    char sentence[100];
+    
+    printf("Enter a sentence: ");
+    fgets(sentence, sizeof(sentence), stdin);
+    
+    countVowels(sentence);
+    
+    return 0;
+}
+output;
+/tmp/LD3kz0LGtp.o
+Enter a sentence: i am workinng
+Occurrences of each vowel in the sentence:
+A/a: 1
+E/e: 0
+I/i: 2
+O/o: 1
+U/u: 0
+
+
+=== Code Execution Successful ===

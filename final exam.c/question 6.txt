@@ -1,0 +1,37 @@
+#include <stdio.h>
+
+struct Movie {
+    char title[50];
+    char genre[20];
+    char language[20];
+};
+
+int main() {
+    int n;
+    printf("Enter the number of movies: ");
+    scanf("%d", &n);
+
+    struct Movie movies[n];
+
+    for (int i = 0; i < n; i++) {
+        printf("Enter details of Movie %d:\n", i+1);
+        printf("Title: ");
+        scanf("%s", movies[i].title);
+        printf("Genre: ");
+        scanf("%s", movies[i].genre);
+        printf("Language: ");
+        scanf("%s", movies[i].language);
+    }
+
+    printf("\nList of Movies:\n");
+    for (int i = 0; i < n; i++) {
+        printf("Movie %d\n", i+1);
+        printf("Title: %s\n", movies[i].title);
+        printf("Genre: %s\n", movies[i].genre);
+        printf("Language: %s\n", movies[i].language);
+        printf("\n");
+    }
+
+    return 0;
+}
+
